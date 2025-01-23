@@ -1,6 +1,7 @@
 import { signOutAction } from "@/app/actions";
 import { hasEnvVars } from "@/utils/supabase/check-env-vars";
 import Link from "next/link";
+import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
 import { createClient } from "@/utils/supabase/server";
 
@@ -16,7 +17,12 @@ export default async function AuthButton() {
       <>
         <div className="flex gap-4 items-center">
           <div>
-            
+            <Badge
+              variant={"default"}
+              className="font-normal pointer-events-none"
+            >
+              Please update .env.local file with anon key and url
+            </Badge>
           </div>
           <div className="flex gap-2">
             <Button
@@ -61,4 +67,5 @@ export default async function AuthButton() {
       </Button>
     </div>
   );
+}
               }
