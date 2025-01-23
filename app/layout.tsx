@@ -55,12 +55,12 @@ export default function RootLayout({
                 <p>
                   Powered by{" "}
                   <a
-                    href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
+                    href="https://paylyfe.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
                     target="_blank"
                     className="font-bold hover:underline"
                     rel="noreferrer"
                   >
-                    Supabase
+                    Paylyfe 
                   </a>
                 </p>
                 <ThemeSwitcher />
