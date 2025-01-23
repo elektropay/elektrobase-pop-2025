@@ -19,7 +19,7 @@ export default function Header() {
       </div>
       <h1 className="sr-only">Elektropay Simplified Payments</h1>
       <p className="text-3xl lg:text-4xl !leading-tight mx-auto max-w-xl text-center">
-        The fastest way to accept customers payments{" "}
+        {" "} The fastest way to accept customers payments{" "}
         <a
           href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
           target="_blank"
@@ -28,7 +28,7 @@ export default function Header() {
         >
           Elektropay
         </a>{" "}
-        and{" "}
+        and {" "}
         <a
           href="https://nextjs.org/"
           target="_blank"
