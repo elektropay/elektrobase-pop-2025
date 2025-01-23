@@ -43,7 +43,8 @@ export default function RootLayout({
                   <div className="flex gap-5 items-center font-semibold">
                     <Link href={"/"}>EverPay</Link>
                     <div className="flex items-center gap-2">
-                    
+                    {!hasEnvVars ? <EnvVarWarning /> : <HeaderAuth />}
+                </div>
                     </div>
                   </div>
                 
