@@ -1,4 +1,5 @@
 import DeployButton from "@/components/deploy-button";
+import { EnvVarWarning } from "@/components/env-var-warning";
 import HeaderAuth from "@/components/header-auth";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 import { hasEnvVars } from "@/utils/supabase/check-env-vars";
@@ -14,7 +15,7 @@ const defaultUrl = process.env.VERCEL_URL
 export const metadata = {
   metadataBase: new URL(defaultUrl),
   title: "Everpay",
-  description: "The fastest way to start accepting payments",
+  description: "The fastest way to build apps with Next.js and Supabase",
 };
 
 const geistSans = Geist({
@@ -28,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={geistSans.className}>
+    <html lang="en" className={geistSans.className} suppressHydrationWarning>
       <body className="bg-background text-foreground">
         <ThemeProvider
           attribute="class"
@@ -46,7 +47,7 @@ export default function RootLayout({
                       <DeployButton />
                     </div>
                   </div>
-                  {!hasEnvVars ? <HeaderAuth />}
+                  {!hasEnvVars ? <EnvVarWarning /> : <HeaderAuth />}
                 </div>
               </nav>
               <div className="flex flex-col gap-20 max-w-5xl p-5">
@@ -62,7 +63,7 @@ export default function RootLayout({
                     className="font-bold hover:underline"
                     rel="noreferrer"
                   >
-                    Supabase
+                    Paylyfe
                   </a>
                 </p>
                 <ThemeSwitcher />
