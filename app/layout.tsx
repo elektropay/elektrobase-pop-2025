@@ -1,4 +1,4 @@
-import { GeistProvider } from "next/font/google";
+import { Geist } from "next/font/google";
 import { EnvVarWarning } from "@/components/env-var-warning";
 import HeaderAuth from "@/components/header-auth";
 import { ThemeSwitcher } from "@/components/theme-switcher";
@@ -17,7 +17,7 @@ export const metadata = {
   description: "The fastest way to build apps with Next.js and Supabase",
 };
 
-const geistSans = GeistProvider({
+const geistSans = Geist({
   display: "swap",
   subsets: ["latin"],
 });
