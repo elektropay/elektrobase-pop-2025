@@ -1,4 +1,4 @@
-import NextLogo from "./next-logo";
+import NextLogo from "@/components/next-logo";
 import { Geist } from "next/font/google";
 import { EnvVarWarning } from "@/components/env-var-warning";
 import HeaderAuth from "@/components/header-auth";
