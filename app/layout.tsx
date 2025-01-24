@@ -1,4 +1,4 @@
-import EverpayLogo from "./logo.png";
+import EverpayLogo from "../logo.png";
 import { Geist } from "next/font/google";
 import { EnvVarWarning } from "@/components/env-var-warning";
 import HeaderAuth from "@/components/header-auth";
