@@ -44,6 +44,4 @@ export default function EverpayLogo() {
     </svg>
   );
 }
- );
-}
-export default Logo;
+export default EverpayLogo;
