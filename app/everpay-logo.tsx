@@ -2,11 +2,11 @@ export default function EverpayLogo() {
   return (
 <svg 
   aria-label="Everpay logotype"
-      height="38"
+      height="24"
       role="img"
-      viewBox="0 0 122 39"
+      viewBox="0 0 122 24"
       width="120"
-      preserveAspectRatio="xMidYMid meet">
+      >
 
 <g transform="translate(0.000000,80.000000) scale(0.100000,-0.100000)"
 fill="#000000" stroke="none">
