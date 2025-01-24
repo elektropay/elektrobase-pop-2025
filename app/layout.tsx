@@ -1,5 +1,7 @@
-import React from 'react';
-import { GeistProvider } from '@geist-ui/react';
+import React from "react";
+import { GeistProvider } from "next/font/google";
+import { ThemeProvider } from "next-themes";
+
 import { EnvVarWarning } from "@/components/env-var-warning";
 import HeaderAuth from "@/components/header-auth";
 import { ThemeSwitcher } from "@/components/theme-switcher";
