@@ -123,7 +123,6 @@ export const resetPasswordAction = async (formData: FormData) => {
       "Password update failed",
     );
   }
-
   encodedRedirect("success/merchant/reset-password", "Password updated");
 };
 
