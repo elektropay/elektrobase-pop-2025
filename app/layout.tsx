@@ -1,3 +1,5 @@
+import React from 'react';
+import { GeistProvider } from '@geist-ui/react';
 import { EnvVarWarning } from "@/components/env-var-warning";
 import HeaderAuth from "@/components/header-auth";
 import { ThemeSwitcher } from "@/components/theme-switcher";
@@ -22,8 +24,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className="bg-background text-foreground">
+     <GeistProvider>{children}</GeistProvider>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
