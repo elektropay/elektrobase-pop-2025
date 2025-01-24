@@ -99,7 +99,7 @@ export const resetPasswordAction = async (formData: FormData) => {
   if (!password || !confirmPassword) {
     encodedRedirect(
       "error",
-      "/account/reset-password",
+      "/merchant/reset-password",
       "Password and confirm password are required",
     );
   }
@@ -107,7 +107,7 @@ export const resetPasswordAction = async (formData: FormData) => {
   if (password !== confirmPassword) {
     encodedRedirect(
       "error",
-      "/account/reset-password",
+      "/merchant/reset-password",
       "Passwords do not match",
     );
   }
@@ -119,12 +119,12 @@ export const resetPasswordAction = async (formData: FormData) => {
   if (error) {
     encodedRedirect(
       "error",
-      "/account/reset-password",
+      "/merchant/reset-password",
       "Password update failed",
     );
   }
 
-  encodedRedirect("success", "/account/reset-password", "Password updated");
+  encodedRedirect("success/merchant/reset-password", "Password updated");
 };
 
 export const signOutAction = async () => {
