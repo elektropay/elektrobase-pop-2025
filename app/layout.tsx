@@ -45,7 +45,7 @@ export default function RootLayout({
                     <Link href={"/"}>
         <Image
           src="/logo.png"
-          alt="EverPay Logo"
+          alt="EverPay"
           width={124} 
           height={36}
           priority
