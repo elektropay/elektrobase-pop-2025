@@ -2,7 +2,7 @@ export default function EverpayLogo() {
   return (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    viewBox="0 0 200 50"
+    viewBox="0 0 130 26"
     fill="none"
     aria-labelledby="EverpayLogo"
     role="img"
