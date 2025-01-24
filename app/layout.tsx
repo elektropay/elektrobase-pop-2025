@@ -16,6 +16,10 @@ export const metadata = {
   title: "Everpay",
   description: "The fastest way to build apps with Next.js and Supabase",
 };
+const geistSans = GeistProvider({
+  display: "swap",
+  subsets: ["latin"],
+});
 
 export default function RootLayout({
   children,
