@@ -1,4 +1,3 @@
-import React from "react";
 import { GeistProvider } from "next/font/google";
 import { EnvVarWarning } from "@/components/env-var-warning";
 import HeaderAuth from "@/components/header-auth";
