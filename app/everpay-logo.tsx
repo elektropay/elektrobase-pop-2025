@@ -27,6 +27,6 @@ const Logo = () => (
       fill="white"
     />
   </svg>
-);
-
+ );
+}
 export default Logo;
