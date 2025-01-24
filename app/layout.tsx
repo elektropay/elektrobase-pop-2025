@@ -14,7 +14,7 @@ const defaultUrl = process.env.VERCEL_URL
 export const metadata = {
   metadataBase: new URL(defaultUrl),
   title: "Everpay",
-  description: "The fastest way to build apps with Next.js and Supabase",
+  description: "The fastest way to bill your customers",
 };
 
 const geistSans = Geist({
@@ -57,7 +57,7 @@ export default function RootLayout({
                 <p>
                   Powered by{" "}
                   <a
-                    href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
+                    href="https://paylyfe.com/?utm_source=create-next-app&utm_medium=template&utm_term=paylyfe"
                     target="_blank"
                     className="font-bold hover:underline"
                     rel="noreferrer"
