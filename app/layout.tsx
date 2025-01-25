@@ -46,7 +46,7 @@ export default function RootLayout({
                   <div className="flex gap-5 items-center font-semibold">
                     <Link href={"/"}>
         <Image
-          src="/logo.png"
+          src="./logo.png"
           alt="EverPay"
           width={124} 
           height={36}
