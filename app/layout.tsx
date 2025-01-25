@@ -52,8 +52,7 @@ export default function RootLayout({
           height={36}
           priority
         />
-        <span className="text-lg font-semibold"></span>
-          </Link>
+         </Link>
                     <div className="flex items-center gap-2">
                       
                     </div>
