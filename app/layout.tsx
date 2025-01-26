@@ -46,7 +46,7 @@ export default function RootLayout({
                   <div className="flex gap-5 items-center font-semibold">
                     <Link href={"/"}>
             <Image
-          src="/logo.svg" // Path to the PNG file in the public folder
+          src="./logo.svg" // Path to the PNG file in the public folder
           alt="EVERPAY"
           width={130} // Set the desired width
           height={30} // Adjust height to maintain aspect ratio
