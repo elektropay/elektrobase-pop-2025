@@ -51,7 +51,7 @@ export default function RootLayout({
           width={130} // Set the desired width
           height={30} // Adjust height to maintain aspect ratio
           priority // Ensures the logo loads quickly
-        />
+        ></Image>
         <span c
                     </Link>
                     <div className="flex items-center gap-2">
