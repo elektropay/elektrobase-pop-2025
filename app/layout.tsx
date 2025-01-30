@@ -56,7 +56,7 @@ export default function RootLayout({
                 {children}
               </div>
 
-              <footer className="w-full flex items-center justify-center border-t mx-auto text-center text-xs gap-5 py-12">
+              <footer className="w-full flex items-center justify-center border-t mx-auto text-center text-xs gap-5 py-10">
                 <p>
                   Powered by{" "}
                   <a
@@ -68,7 +68,8 @@ export default function RootLayout({
                     Paylyfe
                   </a>
                 </p>
-                <ThemeSwitcher />
+                <p>Copyright © 2009 - {new Date().getFullYear()} Everpay.  All rights reserved.</p>
+               <ThemeSwitcher />
               </footer>
             </div>
           </main>
