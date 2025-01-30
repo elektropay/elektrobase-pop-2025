@@ -57,7 +57,10 @@ export default function RootLayout({
               </div>
 
               <footer className="w-full flex items-center justify-center border-t mx-auto text-center text-xs gap-5 py-10">
+                
                 <p>
+                  Copyright © 2009 - {new Date().getFullYear()} Everpay Inc.</p>
+               <p>
                   Powered by{" "}
                   <a
                     href="https://paylyfe.com/?utm_source=create-next-app&utm_medium=template&utm_term=paylyfe"
@@ -68,8 +71,7 @@ export default function RootLayout({
                     Paylyfe
                   </a>
                 </p>
-                <p>Copyright © 2009 - {new Date().getFullYear()} Everpay.  All rights reserved.</p>
-               <ThemeSwitcher />
+                <ThemeSwitcher />
               </footer>
             </div>
           </main>
