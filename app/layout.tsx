@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Geist } from "next/font/google";
 import { EnvVarWarning } from "@/components/env-var-warning";
 import HeaderAuth from "@/components/header-auth";
@@ -45,14 +44,7 @@ export default function RootLayout({
                 <div className="w-full max-w-5xl flex justify-between items-center p-3 px-5 text-sm">
                   <div className="flex gap-5 items-center font-semibold">
                     <Link href={"/"}>
-            <Image
-          src="https://res.cloudinary.com/lmj6rf6tz/image/upload/v1574986847/img/logo-new.png" // Path to the PNG file in the public folder
-          alt="EVERPAY"
-          width={130} // Set the desired width
-          height={30} // Adjust height to maintain aspect ratio
-          priority // Ensures the logo loads quickly
-        ></Image>
-        <span c
+                    <img src="/logo.svg" />
                     </Link>
                     <div className="flex items-center gap-2">
                       
