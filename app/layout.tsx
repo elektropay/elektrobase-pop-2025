@@ -13,8 +13,8 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata = {
   metadataBase: new URL(defaultUrl),
-  title: "Everpay",
-  description: "The fastest way to bill your customers",
+  title: "Everpay Platform",
+  description: "Payments As A Service",
 };
 
 const geistSans = Geist({
