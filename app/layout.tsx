@@ -43,13 +43,7 @@ export default function RootLayout({
                 <div className="w-full max-w-5xl flex justify-between items-center p-3 px-5 text-sm">
                   <div className="flex gap-5 items-center font-semibold">
                     <Link href={"/"}>
-                    <img src="https://res.cloudinary.com/lmj6rf6tz/image/upload/v1574986847/img/logo-new.png" />
-                   <Image
-      alt="Everpay Platform"
-      src="https://res.cloudinary.com/lmj6rf6tz/image/upload/v1574986847/img/logo-new.png"
-      width={136}
-      height={28}
-    />
+                    <img src="https://res.cloudinary.com/lmj6rf6tz/image/upload/v1574986847/img/logo-new.png" width={136} height={28} />
                     </Link>
                     <div className="flex items-center gap-2">
                       
