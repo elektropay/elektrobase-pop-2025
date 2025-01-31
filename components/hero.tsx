@@ -1,6 +1,17 @@
 import NextLogo from "./next-logo";
+import { hasEnvVars } from "@/utils/supabase/check-env-vars";
+import Link from "next/link";
+import { Button } from "./ui/button";
+import { createClient } from "@/utils/supabase/server";
 
-export default function Header() {
+export default async function Header() {
+  const supabase = await createClient();
+
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (!hasEnvVars) {
   return (
     <div className="flex flex-col gap-16 items-center">
       
