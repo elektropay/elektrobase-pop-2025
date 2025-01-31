@@ -1,7 +1,9 @@
 import NextLogo from "./next-logo";
-import SupabaseLogo from "./supabase-logo";
+import Link from "next/link";
+import { Button } from "./ui/button";
 
-export default function Header() {
+export default async function Header() {
+  
   return (
     <div className="flex flex-col gap-16 items-center">
       
@@ -28,17 +30,26 @@ export default function Header() {
       </p>
 
       <div className="flex gap-8 justify-center items-center">
-        <a
-          href="https://supabase.com/?utm_source=create-next-app&utm_medium=template&utm_term=nextjs"
-          target="_blank"
-          rel="noreferrer"
-        >
-          <SupabaseLogo />
-        </a>
-        <span className="border-l rotate-45 h-6" />
-        <a href="https://nextjs.org/" target="_blank" rel="noreferrer">
-          <NextLogo />
-        </a>
+        <div className="flex gap-2">
+            <Button
+              asChild
+              size="sm"
+              variant={"outline"}
+              disabled
+              className="opacity-75 cursor-none pointer-events-none"
+            >
+              <Link href="/sign-in">Sign in</Link>
+            </Button>
+            <Button
+              asChild
+              size="sm"
+              variant={"default"}
+              disabled
+              className="opacity-75 cursor-none pointer-events-none"
+            >
+              <Link href="/sign-up">Sign up</Link>
+            </Button>
+          </div>
       </div>
       <div className="w-full p-[1px] bg-gradient-to-r from-transparent via-foreground/10 to-transparent my-8" />
     </div>
