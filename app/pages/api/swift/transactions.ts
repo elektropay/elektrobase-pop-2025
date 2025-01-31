@@ -50,7 +50,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
         amount, 
         currency, 
         status: 'completed',
-        user_id: user.data.id 
+        user_id: user.user.id 
       }]);
 
     if (dbError) {
