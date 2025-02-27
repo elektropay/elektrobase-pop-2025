@@ -8,6 +8,7 @@ import { ThemeProvider } from "next-themes";
 import Link from "next/link";
 import "./globals.css";
 import { EnvVarWarning } from "@/components/env-var-warning";
+// Removed the import for Modal as it cannot be found
 
 
 const defaultUrl = process.env.VERCEL_URL
